@@ -19,9 +19,9 @@ $(document).ready(function(){
 	    if( window.XMLHttpRequest ) {
 			 $('#myheader').css('position','fixed');
 	         $('#myheader').css('top','0');
-	         $('#tags').css('position','fixed');
- 	         $('#tags').css('top','55px');
- 	         $('#tags').css('margin-left', offsetX.left);
+	         $('#right-panel').css('position','fixed');
+ 	         $('#right-panel').css('top','55px');
+ 	         $('#right-panel').css('margin-left', offsetX.left);
 	    }
 	}
 
@@ -30,10 +30,10 @@ $(document).ready(function(){
     {
         var offsetY = self.pageYOffset;
         if( window.XMLHttpRequest ) {
-            $('#tags').css('position','absolute');
-            $('#tags').css('float','right');
-            $('#tags').css('top', offsetY);
-            $('#tags').css('margin-left', '0');
+            $('#right-panel').css('position','absolute');
+            $('#right-panel').css('float','right');
+            $('#right-panel').css('top', offsetY);
+            $('#right-panel').css('margin-left', '0');
             $('#myheader').css('width', screen.width);
          }
     }
