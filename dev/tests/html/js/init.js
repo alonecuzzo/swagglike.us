@@ -10,6 +10,8 @@ $(document).ready(function(){
 	
 	// $('body').css('position','absolute');
 	
+	$('#myheader').css('width', screen.width);
+	
 	window.onscroll = function()
 	{
 	    var offsetX = $('#articles').offset();
@@ -32,11 +34,13 @@ $(document).ready(function(){
             $('#tags').css('float','right');
             $('#tags').css('top', offsetY);
             $('#tags').css('margin-left', '0');
+            $('#myheader').css('width', screen.width);
          }
     }
       
 	//alert( "get that voting going")
 	//activate the voting
     activate_voting();
+    activate_tags();
     
 });

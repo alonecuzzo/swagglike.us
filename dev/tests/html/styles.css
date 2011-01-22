@@ -27,10 +27,10 @@ body{
     left: 0;
     top: 0;
     height: 50px;
-    width: 3200px;
+/*   width: 3200px;*/
     padding:0;
     z-index:34;
-    background-color:#000000;
+/*    background-color:#000000;*/
     background:url(img/header-bkgrnd.png) repeat-x 50% 50% #f8f8f8;
 }
 
@@ -43,7 +43,7 @@ body{
 /* Hyperlink Styles: */
 
 a, a:visited {
-	color:#0196e3;
+/*  color:#0196e3;*/
 	text-decoration:none;
 	outline:none;
 }
@@ -140,6 +140,10 @@ footer .line{
     margin-top:3px;
 }
 
+#tags li a{
+    color:#ffffff;
+}
+
 #tags h2{
     font-size:18px;
 }
@@ -170,27 +174,27 @@ nav{
 
 /* The navigation styling: */
 
-nav ul li{
-	display:inline;
+/*nav ul li{
+    display:inline;
 }
 
 nav ul li a,
 nav ul li a:visited{
-	color:#565656;
-	display:block;
-	float:left;
-	font-size:1.25em;
-	font-weight:bold;
-	margin:5px 2px;
-	padding:7px 10px 4px;
-	text-shadow:0 1px 1px white;
-	text-transform:uppercase;
+    color:#565656;
+    display:block;
+    float:left;
+    font-size:1.25em;
+    font-weight:bold;
+    margin:5px 2px;
+    padding:7px 10px 4px;
+    text-shadow:0 1px 1px white;
+    text-transform:uppercase;
 }
 
 nav ul li a:hover{
-	text-decoration:none;
-	background-color:#f0f0f0;
-}
+    text-decoration:none;
+    background-color:#f0f0f0;
+}*/
 
 nav, article, nav ul li a,figure{
 	/* Applying CSS3 rounded corners: */
