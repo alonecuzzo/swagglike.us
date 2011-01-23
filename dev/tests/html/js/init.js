@@ -11,6 +11,7 @@ $(document).ready(function(){
 	// $('body').css('position','absolute');
 	
 	$('#myheader').css('width', screen.width);
+	$('#back-to-top-button').fadeOut(1);
 	
 	window.onscroll = function()
 	{
@@ -22,6 +23,15 @@ $(document).ready(function(){
 	         $('#right-panel').css('position','fixed');
  	         $('#right-panel').css('top','55px');
  	         $('#right-panel').css('margin-left', offsetX.left);
+ 	         
+ 	         //fade button here
+ 	         if (document.documentElement.scrollTop > 675 || self.pageYOffset > 675) {
+ 	             $('#back-to-top-button').fadeIn();
+ 	             
+             } else {
+                 
+                 $('#back-to-top-button').fadeOut();
+             }
 	    }
 	}
 
