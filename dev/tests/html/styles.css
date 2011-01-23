@@ -39,11 +39,16 @@ body{
 }
 
 
+#myheader a.up{
+    font-color:#000000;
+}
+
+
 
 /* Hyperlink Styles: */
 
 a, a:visited {
-/*  color:#0196e3;*/
+    color:#ffffff;
 	text-decoration:none;
 	outline:none;
 }
@@ -285,7 +290,7 @@ footer a,footer a:visited{
 
 footer a:hover{
 	text-decoration:none;
-	background-color:#142830;
+/*  background-color:#142830;*/
 }
 
 footer a.by{
