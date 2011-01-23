@@ -27,9 +27,7 @@ $(document).ready(function(){
  	         //fade button here
  	         if (document.documentElement.scrollTop > 675 || self.pageYOffset > 675) {
  	             $('#back-to-top-button').fadeIn();
- 	             
              } else {
-                 
                  $('#back-to-top-button').fadeOut();
              }
 	    }
