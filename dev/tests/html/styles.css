@@ -119,6 +119,17 @@ footer .line{
 	margin:2em 0;
 }
 
+#back-to-top-button{
+    position:absolute;
+    width:51px;
+    z-index:77;
+    height:50px;
+    margin-top:-277px;
+    margin-left:190px;
+/*    right:100px;*/
+/*    background:url(img/back_to_top_button.png) no-repeat;*/
+}
+
 #right-panel{
     position:absolute;
     /*float:right;*/
@@ -138,7 +149,7 @@ footer .line{
 
 #tags{
    /*height: 200px;*/
-   width: 200px;
+   width: 150px;
    padding:10px 10px; 
    background-color:#000000;
 }

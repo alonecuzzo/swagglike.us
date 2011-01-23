@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	/* This code is executed after the DOM has been completely loaded */
 	
-	$('nav a,#myheader a.up').click(function(e){
+	$('nav a,#myheader a.up, #back-to-top-button a.up').click(function(e){
 								
 		// If a link has been clicked, scroll the page to the link's hash target:
 		$.scrollTo( this.hash || 0, 1500);
