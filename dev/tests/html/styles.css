@@ -108,6 +108,15 @@ p{
     overflow:hidden;
 }
 
+.login-form{
+       position:absolute;
+       /*float:right;*/
+       left: 60.5%;
+       top: 20px;
+       z-index:100;
+}
+
+
 #tags .line{
 	background-color:#15242a;
 	border-bottom-color:#204656;
@@ -179,19 +188,6 @@ footer .line{
     font-size:18px;
 }
 
-nav{
-	background:url(img/gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
-	padding:0 5px;
-	position:absolute;
-	right:0;
-	top:4em;
-	
-	border:1px solid #FCFCFC;
-
-	-moz-box-shadow:0 1px 1px #333333;
-	-webkit-box-shadow:0 1px 1px #333333;
-	box-shadow:0 1px 1px #333333;
-}
 
 /* The clearfix hack to clear the floats: */
 

@@ -10,8 +10,9 @@ $(document).ready(function(){
 	
 	// $('body').css('position','absolute');
 	
-	$('#myheader').css('width', screen.width);
+	
 	$('#back-to-top-button').fadeOut(1);
+	
 	
 	window.onscroll = function()
 	{
@@ -20,9 +21,14 @@ $(document).ready(function(){
 	    if( window.XMLHttpRequest ) {
 			 $('#myheader').css('position','fixed');
 	         $('#myheader').css('top','0');
+	         
 	         $('#right-panel').css('position','fixed');
  	         $('#right-panel').css('top','55px');
  	         $('#right-panel').css('margin-left', offsetX.left);
+ 	         
+ 	         $('.login-form').css('position','fixed');
+ 	         $('.login-form').css('top','20px');
+ 	         $('.login-form').css('margin-left', offsetX.left);
  	         
  	         //fade button here
  	         if (document.documentElement.scrollTop > 675 || self.pageYOffset > 675) {
@@ -37,12 +43,20 @@ $(document).ready(function(){
     window.onresize = function()
     {
         var offsetY = self.pageYOffset;
+        var offsetX = screen.width/2-300;
+        
         if( window.XMLHttpRequest ) {
             $('#right-panel').css('position','absolute');
             $('#right-panel').css('float','right');
             $('#right-panel').css('top', offsetY);
             $('#right-panel').css('margin-left', '0');
-            $('#myheader').css('width', screen.width);
+            
+            $('.login-form').css('position','absolute');
+            $('.login-form').css('float','right');
+            $('.login-form').css('top', '20px' );
+            $('.login-form').css('left', '60.5%');
+            
+            $('#myheader').css('width', $(window).width());
          }
     }
       
@@ -50,5 +64,7 @@ $(document).ready(function(){
 	//activate the voting
     activate_voting();
     activate_tags();
+    $('#myheader').css('width', $(window).width());
+    //alert($(window).width())
     
 });
