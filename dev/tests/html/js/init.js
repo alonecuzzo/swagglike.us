@@ -27,8 +27,8 @@ $(document).ready(function(){
  	         $('#right-panel').css('margin-left', offsetX.left);
  	         
  	         $('.login-form').css('position','fixed');
- 	         $('.login-form').css('top','20px');
- 	         $('.login-form').css('margin-left', offsetX.left);
+ 	         $('.login-form').css('top','13px');
+             // $('.login-form').css('margin-left', offsetX.left);
  	         
  	         //fade button here
  	         if (document.documentElement.scrollTop > 675 || self.pageYOffset > 675) {
@@ -43,7 +43,7 @@ $(document).ready(function(){
     window.onresize = function()
     {
         var offsetY = self.pageYOffset;
-        var offsetX = screen.width/2-300;
+        var offsetX = $(window).width()-330;
         
         if( window.XMLHttpRequest ) {
             $('#right-panel').css('position','absolute');
@@ -53,10 +53,12 @@ $(document).ready(function(){
             
             $('.login-form').css('position','absolute');
             $('.login-form').css('float','right');
-            $('.login-form').css('top', '20px' );
-            $('.login-form').css('left', '60.5%');
+            $('.login-form').css('top', offsetY+13 );
+            $('.login-form').css('margin-left', offsetX);
             
             $('#myheader').css('width', $(window).width());
+            
+            //alert(offsetX)
          }
     }
       
@@ -65,6 +67,7 @@ $(document).ready(function(){
     activate_voting();
     activate_tags();
     $('#myheader').css('width', $(window).width());
+    $('.login-form').css('margin-left', $(window).width()-330);
     //alert($(window).width())
     
 });
