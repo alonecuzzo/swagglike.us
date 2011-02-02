@@ -12,6 +12,14 @@ $(document).ready(function(){
 	
 	
 	$('#back-to-top-button').fadeOut(1);
+	var isff = $.browser.mozilla;
+    var loginOffsetX = 0;
+    
+    if(isff){
+        loginOffsetX = 400;
+    } else {
+        loginOffsetX = 330;
+    }
 	
 	
 	window.onscroll = function()
@@ -43,7 +51,7 @@ $(document).ready(function(){
     window.onresize = function()
     {
         var offsetY = self.pageYOffset;
-        var offsetX = $(window).width()-330;
+        var offsetX = $(window).width()-loginOffsetX;
         
         if( window.XMLHttpRequest ) {
             $('#right-panel').css('position','absolute');
@@ -68,7 +76,8 @@ $(document).ready(function(){
     activate_tags();
     activate_login();
     $('#myheader').css('width', $(window).width());
-    $('.login-form').css('margin-left', $(window).width()-330);
-    //alert($(window).width())
+    $('.login-form').css('margin-left', $(window).width()-loginOffsetX);
+    
+    //alert("is firefox? " + isff);
     
 });

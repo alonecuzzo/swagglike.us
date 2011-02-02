@@ -168,13 +168,19 @@ p{
     overflow:hidden;
 }
 
+.login-holder{
+    min-width:300px;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
 .login-form{
        position:absolute;
-       /*float:right;*/
+/*       float:right;*/
 /*       left: 65.5%;*/
        top: 13px;
        z-index:100;
-       min-width:300px;
+/*       min-width:300px;*/
 }
 
 .login-form input{
