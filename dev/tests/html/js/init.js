@@ -17,6 +17,8 @@ $(document).ready(function(){
     
     if(isff){
         loginOffsetX = 400;
+        //back to button fix
+        $('#back-to-top-button').css('margin-top','-252px')
     } else {
         loginOffsetX = 330;
     }
