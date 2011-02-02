@@ -1,4 +1,4 @@
-function activate_voting()
+function activate_login()
 {
     $('.input-field').focus(
        function(){
@@ -14,8 +14,7 @@ function activate_voting()
                     $(this).attr('value', "USERNAME");
                 } else {
                     $(this).attr('value', "PASSWORD");
-                }
-                
+                }  
             }
       });
 }
