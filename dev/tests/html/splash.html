@@ -11,6 +11,7 @@
         <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 		<script src="js/activate-voting.js" type="text/javascript"></script>
 		<script src="js/activate-tags.js" type="text/javascript"></script>
+		<script src="js/activate-login.js" type="text/javascript"></script>
         <link rel="stylesheet" type="text/css" href="styles.css" />
 		<link rel="Shortcut Icon" href="img/favicon.ico">
         
@@ -34,10 +35,13 @@
 		<div id="myheader">
         	<h1><a href="#" class="up">SWAGGLIKE.US</a></h1>
 		</div>
-		<form name="login" action="" method="post" class="login-form" id="user-login-form">
-			<input type="text" name="name" value="USERNAME" /> 
-			<input type="password" name="password" value="PASSWORD" /> 
-		</form>
+		<div class="login-holder">
+			<form name="login" action="" method="post" class="login-form" id="user-login-form">
+				<input class="input-field" type="text" name="name" value="USERNAME"/> 
+				<input class="input-field" type="password" name="password" value="PASSWORD"/> 
+				<input class="button blue" type="button" value="LOGIN"/>
+			</form>
+		</div>
 		
   
     	
