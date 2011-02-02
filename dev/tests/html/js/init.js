@@ -66,6 +66,7 @@ $(document).ready(function(){
 	//activate the voting
     activate_voting();
     activate_tags();
+    activate_voting();
     $('#myheader').css('width', $(window).width());
     $('.login-form').css('margin-left', $(window).width()-330);
     //alert($(window).width())
