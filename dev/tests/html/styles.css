@@ -227,6 +227,39 @@ footer .line{
     z-index:33;
 }
 
+
+#splash-right-panel{
+    position:absolute;
+    left:600px;
+    float:right;
+}
+
+#splash-right-panel .line{
+    margin-top:-10px;
+}
+
+#splash-right-panel p{
+    font-weight:bold;
+    font-family:champagne-bold;
+    font-size:14px;
+    margin-top:-20px;
+}
+
+#splash-first-box{
+     width: 300px;
+     padding:10px 10px; 
+     background-color:#000000;
+}
+
+#splash-right-panel h2{
+     font-size:18px;
+}
+
+
+#splash-right-panel-second-line{
+    margin-top:-13px;
+}
+
 #right-panel ul{
      list-style-type:none; 
      margin-left:10px;
@@ -268,6 +301,38 @@ footer .line{
     font-size:18px;
 }
 
+
+.splash-image-stuff{
+    width:555px;
+    background-color:#000000;
+}
+
+.splash-image{
+    padding:5px 5px;
+    margin-top:90px;
+}
+
+
+.splash-header{
+    text-shadow:0 1px 1px black;
+	font-family:champagne-bold;
+	font-size:120px;
+	font-weight:bold;
+	position:absolute;
+	z-index:20;
+	margin-left:20px;
+}
+
+#splash-second-line{
+    margin-top:80px;
+}
+
+.splash-video{
+    position:absolute;
+	z-index:20;
+	margin-top:466px;
+	margin-left:51px;
+}
 
 /* The clearfix hack to clear the floats: */
 
